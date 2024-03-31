@@ -6,14 +6,14 @@ from pract03 import Iter2, Iter1, Recursivo
 
 
 # Complejidad temporal
-n = 1000001
+n = 1000
 T = [[0], [0], [0]]
 D = []
 
 for i in range(n):
   D.append([0])
 
-for i in range(n // 100, n, n // 100):
+for i in range(n // 10, n, n // 10):
 
   t = time.time()
   Iter1(D)
